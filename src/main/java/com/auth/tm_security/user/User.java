@@ -1,10 +1,7 @@
 package com.auth.tm_security.user;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -23,6 +20,7 @@ public class User implements UserDetails {
     private String firstname;
     private String lastname;
     private String username;
+    @Getter
     private String email;
     private String password;
 
